@@ -1,0 +1,40 @@
+Package: femme
+Title: Fixed-Effects Marginal Means Estimation
+Version: 0.0.1
+Authors@R: 
+    c(person("Joop", "Adema", email = "joop.adema@uibk.ac.at", role = c("aut", "cre")),
+    person("Lasha", "Chargaziia", email = "chargaziia@ifo.de", role = c("aut")))
+Description: A set of useful tools and wrappers for analysing conjoint survey experiments.
+    Key features include (1) Estimation of Average Marginal Component Effects (AMCEs)
+    and Marginal Means (MMs) with individual fixed effects, (2) stratified
+    bootstrap confidence intervals and two-sided p-values, (3) subgroup analyses
+    (within-group and cross-group pairwise comparisons with inference), and (4) 
+    attribute-based predictions (optionally with LASSO-based interaction selection).
+    The package relies on 'fixest' for fast within-respondent estimation.
+License: LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Depends:
+    R (>= 4.1.0)
+Imports:
+    dplyr (>= 1.1.0),
+    forcats,
+    stringr,
+    rlang,
+    fixest (>= 0.11.0),
+    boot,
+    broom.helpers,
+    utils,
+    stats,
+    ggplot2,
+    ggtext
+Suggests:
+    Matrix,
+    glmnet,
+    knitr,
+    rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/feelingsdotcfg/femme
+BugReports: https://github.com/feelingsdotcfg/femme/issues
